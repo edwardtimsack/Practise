@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreLiberia</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="aside">
+            <h1>ScoreLiberia</h1>
+            <p>Sports</p>
+            <div class="dip">
+                <i class="ri-football-line"></i>
+                <select name="" id="Football Leagues">
+                    <option disabled selected>Football</option>
+                    <option value="">LFA First Division</option>
+                    <option value="">Cellcom First Division</option>
+                    <option value="">Cellcom Second Division</option>
+                    <option value="">Women's Division</option>
+                </select>
+            </div>
+
+            <div class="dip1">
+                <i class="ri-basketball-line"></i>
+                <select name="" id="Basketball Leagues">
+                    <option disabled selected>Basketball</option>
+                    <option value="">LFA First Division</option>
+                    <option value="">Cellcom First Division</option>
+                    <option value="">Cellcom Second Division</option>
+                    <option value="">Women's Division</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="right-div">
+
+            <div class="navigation">
+            <header>
+                <h1 id="app-me">Today is sport day!!</h1>
+            </header>
+            <nav>
+                    <i class="ri-notification-2-fill"></i>
+                    <!-- <i class="ri-menu-line"></i> -->
+                <input type="text" id="teamSearch" placeholder="Search for a team...">
+                <select name="" id="Sort_leagues">
+                    <option disabled selected>Sort</option>
+                    <option value="first" id="first">A - Z</option>
+                    <option value="last" id="last">Z - A</option>
+                    <option value="point" id="point">Points</option>
+                    <option value="position" id="position">Position</option>
+                </select>
+            </nav>
+            </div>
+
+            <main>
+                <div class="mid">
+                    <div class="future-game">
+                        <h1>Muscat Vs Watanga</h1>
+                        <div class="date">
+                            <i class="ri-calendar-line"></i>
+                            <p>16 May 2024</p>
+                        </div>
+                        <div class="date">
+                            <i class="ri-home-smile-line"></i>
+                            <p>Samuel Kanyon Doe Stadium</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right">
+                    <div class="live_matches">
+                        <h1>Live Matches</h1>
+                        <p>Description about this match</p>
+                        <div class="flags">
+                            <img src="./img/LISCR FC.png" alt="">
+                            <span>4 : 2</span>
+                            <img src="./img/Bea-Mountain.png" alt="">
+                        </div>
+                        <button>Match Detail</button>
+                    </div>
+                </div>
+            </main>
+            
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
