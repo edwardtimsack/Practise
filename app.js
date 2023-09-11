@@ -13,19 +13,22 @@ const yearSeletion = document.querySelector('#choose-year');
 const currentYear = document.querySelector('#current-season');
 const lastYear = document.querySelector('#last-season');
 
-yearSeletion.addEventListener('change' , function(){
-    const selectedYear = yearSeletion.value;
-    if(selectedYear === currentYear.value){
-        console.log('current')
-        displayLeaguesss()
-        newSeason.style.display = 'block'
-    }
-    else if(selectedYear === lastYear.value){
-        console.log('last')
-    }
-    console.log(selectedYear)
-    displayLeague()
-})
+const requirement = document.querySelector('.require')
+const Fixtures = document.querySelector('#fixture');
+const summary = document.querySelector('#summary')
+// yearSeletion.addEventListener('change' , function(){
+//     const selectedYear = yearSeletion.value;
+//     if(selectedYear === currentYear.value){
+//         console.log('current')
+//         // displayLeaguesss()
+//         newSeason.style.display = 'block'
+//     }
+//     else if(selectedYear === lastYear.value){
+//         console.log('last')
+//     }
+//     console.log(selectedYear)
+//     // displayLeague()
+// })
 sortLeagues.addEventListener('change' , function(){
     const selectedOption = sortLeagues.value;
     if(selectedOption === point.value){
@@ -272,7 +275,7 @@ function displayLeague() {
         aboutTeam.appendChild(loss);
         aboutTeam.appendChild(gamePlayed);
         aboutTeam.appendChild(gamePoints);
-        teamLogo.style.width = '40px'
+        teamLogo.style.width = '40px';
         aboutTeam.style.alignItems = 'center';
         combine.style.display = 'flex';
         combine.style.gap = '10px';
@@ -298,7 +301,7 @@ const leagueTableCurrent = [
     {
         position: 1,
         clubName: "Heaven Eleven",
-        clubLogo: './img/LISCR FC.png',
+        clubLogo: './img/Heaven Eleven1.png',
         gameWon: 1,
         gameDrawn: 0,
         gameLoss: 0,
@@ -308,7 +311,7 @@ const leagueTableCurrent = [
     {
         position: 2,
         clubName: "LISCR FC",
-        clubLogo: './img/Bea-Mountain.png',
+        clubLogo: './img/LISCR FC.png',
         gameWon: 1,
         gameDrawn: 0,
         gameLoss: 0,
@@ -318,7 +321,7 @@ const leagueTableCurrent = [
     {
         position: 3,
         clubName: "Paynesville",
-        clubLogo: './img/Wantaga1.png',
+        clubLogo: './img/Paynesville.png',
         gameWon: 0,
         gameDrawn: 1,
         gameLoss: 0,
@@ -328,7 +331,7 @@ const leagueTableCurrent = [
     {
         position: 4,
         clubName: "Bea Mount",
-        clubLogo: './img/Mighty Barrole1.png',
+        clubLogo: './img/Bea-Mountain.png',
         gameWon: 0,
         gameDrawn: 1,
         gameLoss: 0,
@@ -338,7 +341,7 @@ const leagueTableCurrent = [
     {
         position: 5,
         clubName: "Mighty Barrole",
-        clubLogo: './img/Heaven Eleven1.png',
+        clubLogo: './img/Mighty Barrole1.png ',
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
@@ -348,7 +351,7 @@ const leagueTableCurrent = [
     {
         position: 6,
         clubName: "LPRC Oiler",
-        clubLogo: './img/Nimba Kwado1.png',
+        clubLogo: './img/LRPC-Oilers-logo-128x128.jpg',
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
@@ -358,7 +361,7 @@ const leagueTableCurrent = [
     {
         position: 7,
         clubName: "Wantaga",
-        clubLogo: './img/Muscat1.png',
+        clubLogo: './img/Wantaga1.png',
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
@@ -368,7 +371,7 @@ const leagueTableCurrent = [
     {
         position: 8,
         clubName: "Freeport",
-        clubLogo: './img/LRPC-Oilers-logo-128x128.jpg',
+        clubLogo: './img/Freeportt.png',
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
@@ -378,7 +381,7 @@ const leagueTableCurrent = [
     {
         position: 9,
         clubName: "Nimba Kwado",
-        clubLogo: './img/Cece-United.png',
+        clubLogo: './img/Nimba Kwado1.png',
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
@@ -388,7 +391,7 @@ const leagueTableCurrent = [
     {
         position: 10,
         clubName: "Kallon Liberia",
-        clubLogo: './img/Invicible Eleven1.png',
+        clubLogo: './img/Muscat1.png',
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
@@ -398,7 +401,7 @@ const leagueTableCurrent = [
     {
         position: 11,
         clubName: "Cece United",
-        clubLogo: './img/Freeportt.png',
+        clubLogo: './img/Cece-United.png ',
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
@@ -408,7 +411,7 @@ const leagueTableCurrent = [
     {
         position: 12,
         clubName: "Global Pharma",
-        clubLogo: './img/Jubile.png',
+        clubLogo: './img/Global.png',
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
@@ -418,7 +421,7 @@ const leagueTableCurrent = [
     {
         position: 13,
         clubName: "Invicible Eleven",
-        clubLogo: './img/nimba_united2-128x128.jpg',
+        clubLogo: './img/Invicible Eleven1.png',
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
@@ -428,7 +431,7 @@ const leagueTableCurrent = [
     {
         position: 14,
         clubName: "NPA Anchors",
-        clubLogo: './img/Sandi.png',
+        clubLogo: './img/National_Port_Authority_Anchors3-128x128.jpg',
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
@@ -489,6 +492,7 @@ function displayLeaguesss() {
         }
     
     }
+    displayLeaguesss()
 // }
 
 
