@@ -52,7 +52,7 @@ const lastestScores = [
             score: '2'
         }
     }
-];
-            
+]; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 
