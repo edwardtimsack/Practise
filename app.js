@@ -341,7 +341,7 @@ const leagueTableCurrent = [
     {
         position: 5,
         clubName: "Mighty Barrole",
-        clubLogo: './img/Mighty Barrole1.png ',
+        clubLogo: './img/Mighty Barrole1.png',
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
@@ -401,7 +401,7 @@ const leagueTableCurrent = [
     {
         position: 11,
         clubName: "Cece United",
-        clubLogo: './img/Cece-United.png ',
+        clubLogo: './img/Cece-United.png',
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
