@@ -17,7 +17,7 @@ const lastestScores = [
         clubLogo: './img/Mighty Barrole1.png',
         homeName: 'Mighty Barrolle',
         date: '10.09.',
-        gameTime: '16:00',
+        gameTime: 'FT',
         homeScore: '2',
         awayTeam: {
             clubLogo: './img/Freeportt.png',
@@ -29,7 +29,7 @@ const lastestScores = [
         clubLogo: './img/Nimba Kwado1.png',
         homeName: 'Nimba Kwado',
         date: '10.09.',
-        gameTime: '16:00',
+        gameTime: 'FT',
         homeScore: '1',
         awayTeam: {
             clubLogo: './img/Cece-United.png',
@@ -41,7 +41,7 @@ const lastestScores = [
         clubLogo: './img/Wantaga1.png',
         homeName: 'Watanga',
         date: '10.09.',
-        gameTime: '16:00',
+        gameTime: 'FT',
         homeScore: '2',
         awayTeam: {
             clubLogo: './img/Global.png',
@@ -53,7 +53,7 @@ const lastestScores = [
         clubLogo: './img/Invicible Eleven1.png',
         homeName: 'Kallon Liberia',
         date: '09.09',
-        gameTime: '16:00',
+        gameTime: 'FT',
         homeScore: '1',
         awayTeam: {
             clubLogo: './img/LRPC-Oilers-logo-128x128.jpg',
@@ -65,7 +65,7 @@ const lastestScores = [
         clubLogo: './img/LISCR FC.png',
         homeName: 'LISCR FC',
         date: '06.09',
-        gameTime: '17:45',
+        gameTime: 'FT',
         homeScore: '2',
         awayTeam: {
             clubLogo: './img/National_Port_Authority_Anchors3-128x128.jpg',
@@ -77,7 +77,7 @@ const lastestScores = [
         clubLogo: './img/Bea-Mountain.png',
         homeName: 'BEA Mountain',
         date: '06.09',
-        gameTime: '16:30',
+        gameTime: 'FT',
         homeScore: '1',
         awayTeam: {
             clubLogo: './img/Paynesville.png',
@@ -89,7 +89,7 @@ const lastestScores = [
         clubLogo: './img/Heaven Eleven1.png',
         homeName: 'Heaven Eleven',
         date: '06.09',
-        gameTime: '14:00',
+        gameTime: 'FT',
         homeScore: '4',
         awayTeam: {
             clubLogo: './img/Invicible Eleven1.png',
@@ -106,28 +106,32 @@ function displayResults() {
         
         const boss = document.createElement('div');
         const box = document.createElement('div');
+        const durations = document.createElement('div');
+
         const container = document.createElement('div');
         const homeLogo = document.createElement('img');
         const awayLogo = document.createElement('img');
-        const homeName = document.createElement('h1');
-        const awayName = document.createElement('p');
+        const homeName = document.createElement('h2');
+        const awayName = document.createElement('h2');
         const date = document.createElement('p');
-        const time = document.createElement('p');
+        const time = document.createElement('h3');
         const homeScore = document.createElement('h1');
-        const awayScore = document.createElement('p');
+        const awayScore = document.createElement('h1');
 
         homeLogo.src = lastestScores[a].clubLogo;
         awayLogo.src = lastestScores[a].awayTeam.clubLogo;
         homeName.innerHTML = lastestScores[a].homeName;
         awayName.innerHTML = lastestScores[a].awayTeam.awayName;
         date.innerHTML = lastestScores[a].date;
-        time.innerHTML = lastestScores[a].time;
+        time.innerHTML = lastestScores[a].gameTime;
         homeScore.innerHTML = lastestScores[a].homeScore;
         awayScore.innerHTML = lastestScores[a].awayTeam.awayScore;
 
         container.appendChild(awayLogo);
         container.appendChild(awayName);
         container.appendChild(awayScore);
+        durations.appendChild(date);
+        durations.appendChild(time);
         box.appendChild(homeLogo);
         box.appendChild(homeName);
         box.appendChild(homeScore);
@@ -135,10 +139,12 @@ function displayResults() {
 
 
         boss.appendChild(box);
+        boss.appendChild(durations)
         boss.appendChild(container);
         
         resultContainer.appendChild(boss);
-        boss.classList.add('boss')
+        boss.classList.add('boss');
+        durations.classList.add('duration')
         container.classList.add('away-area')
 
         box.classList.add('home-area')

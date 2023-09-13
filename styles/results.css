@@ -197,29 +197,21 @@ nav a:active{
 
 }
 .boss{
-    border-bottom: 3px solid #8f4141;
-
+    border-top: 2px solid #faf6f6;
+    padding: 20px;
 }
 .home-area {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
-    /* background-color: #602089; */
+    gap: 30px;
     font-size: 10px;
-    /* border-bottom: 3px solid #8f4141; */
-
 }
 .away-area{
     display: flex;
-    /* justify-content: space-around; */
-    justify-content: center;
-
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     margin-top: 10px;
-    /* background-color: #602089; */
-    font-size: 20px;
+    font-size: 10px;
 
 }
 .home-area img , .away-area img{
@@ -251,7 +243,7 @@ nav a:active{
 }
 .duration{
     display: flex;
-    /* justify-content: center; */
+    justify-content: right;
     align-items: center;
     gap: 20px;
 }
