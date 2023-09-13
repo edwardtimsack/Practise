@@ -144,22 +144,22 @@ function displayResults() {
         
         resultContainer.appendChild(boss);
         boss.classList.add('boss');
-        durations.classList.add('duration')
-        container.classList.add('away-area')
+        durations.classList.add('duration');
+        container.classList.add('away-area');
 
-        box.classList.add('home-area')
+        box.classList.add('home-area');
         homeScore.style.fontSize = '20px'
         // resultContainer.appendChild(date);
         // resultContainer.appendChild(time);
         // resultContainer.appendChild(awayLogo)
         
         // console.log(lastestScores[a].clubLogo)
-        const matchIndex = 0;
+        // const matchIndex = 0;
 
-        const Logo = lastestScores[a].awayTeam.awayScore;
-        // const away = lastestScores[a].awayTeam.awayName;
+        // const Logo = lastestScores[a].awayTeam.awayScore;
+        // // const away = lastestScores[a].awayTeam.awayName;
         
-        console.log(Logo);
+        // console.log(Logo);
 
     }
 }

@@ -322,8 +322,8 @@ const leagueTableCurrent = [
         position: 3,
         clubName: "Paynesville",
         clubLogo: './img/Paynesville.png',
-        gameWon: 0,
-        gameDrawn: 1,
+        gameWon: 1,
+        gameDrawn: 0,
         gameLoss: 0,
         matchPlayed: 1,
         points: 1
@@ -332,8 +332,8 @@ const leagueTableCurrent = [
         position: 4,
         clubName: "Bea Mount",
         clubLogo: './img/Bea-Mountain.png',
-        gameWon: 0,
-        gameDrawn: 1,
+        gameWon: 1,
+        gameDrawn: 0,
         gameLoss: 0,
         matchPlayed: 1,
         points: 1
@@ -342,10 +342,10 @@ const leagueTableCurrent = [
         position: 5,
         clubName: "Mighty Barrole",
         clubLogo: './img/Mighty Barrole1.png',
-        gameWon: 0,
+        gameWon: 1,
         gameDrawn: 0,
         gameLoss: 0,
-        matchPlayed: 0,
+        matchPlayed: 1,
         points: 0
     },
     {
@@ -353,9 +353,9 @@ const leagueTableCurrent = [
         clubName: "LPRC Oiler",
         clubLogo: './img/LRPC-Oilers-logo-128x128.jpg',
         gameWon: 0,
-        gameDrawn: 0,
+        gameDrawn: 1,
         gameLoss: 0,
-        matchPlayed: 0,
+        matchPlayed: 1,
         points: 0
     },
     {
@@ -363,9 +363,9 @@ const leagueTableCurrent = [
         clubName: "Wantaga",
         clubLogo: './img/Wantaga1.png',
         gameWon: 0,
-        gameDrawn: 0,
+        gameDrawn: 1,
         gameLoss: 0,
-        matchPlayed: 0,
+        matchPlayed: 1,
         points: 0
     },
     {
@@ -373,9 +373,9 @@ const leagueTableCurrent = [
         clubName: "Freeport",
         clubLogo: './img/Freeportt.png',
         gameWon: 0,
-        gameDrawn: 0,
+        gameDrawn: 1,
         gameLoss: 0,
-        matchPlayed: 0,
+        matchPlayed: 1,
         points: 0
     },
     {
@@ -383,9 +383,9 @@ const leagueTableCurrent = [
         clubName: "Nimba Kwado",
         clubLogo: './img/Nimba Kwado1.png',
         gameWon: 0,
-        gameDrawn: 0,
+        gameDrawn: 1,
         gameLoss: 0,
-        matchPlayed: 0,
+        matchPlayed: 1,
         points: 0 
     },
     {
@@ -395,7 +395,7 @@ const leagueTableCurrent = [
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
-        matchPlayed: 0,
+        matchPlayed: 1,
         points: 0
     },
     {
@@ -405,7 +405,7 @@ const leagueTableCurrent = [
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
-        matchPlayed: 0,
+        matchPlayed: 1,
         points: 0
     },
     {
@@ -415,7 +415,7 @@ const leagueTableCurrent = [
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
-        matchPlayed: 0,
+        matchPlayed: 1,
         points: 0
     },
     {
@@ -425,7 +425,7 @@ const leagueTableCurrent = [
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
-        matchPlayed: 0,
+        matchPlayed: 1,
         points: 0
     },
     {
@@ -435,7 +435,7 @@ const leagueTableCurrent = [
         gameWon: 0,
         gameDrawn: 0,
         gameLoss: 0,
-        matchPlayed: 0,
+        matchPlayed: 1,
         points: 0
     }
 ]
