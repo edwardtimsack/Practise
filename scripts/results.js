@@ -10,7 +10,8 @@ const awayArea = document.querySelector('.away-area');
 const requirementName = document.createElement('h1')
 requirementName.textContent = 'Results';
 resultContainer.appendChild(requirementName);
-requirementName.classList.add('midi')
+requirementName.classList.add('midi');
+
 const lastestScores = [
     {
         clubLogo: './img/Mighty Barrole1.png',
@@ -101,39 +102,58 @@ const lastestScores = [
 
 function displayResults() {
     for(let a = 0; a < lastestScores.length; a++){
-        console.log(lastestScores);
-
+        // console.log(lastestScores);
+        
+        const boss = document.createElement('div');
         const box = document.createElement('div');
+        const container = document.createElement('div');
         const homeLogo = document.createElement('img');
         const awayLogo = document.createElement('img');
         const homeName = document.createElement('h1');
-        const awayName = document.createElement('h1');
+        const awayName = document.createElement('p');
         const date = document.createElement('p');
         const time = document.createElement('p');
-        const homeScore = document.createElement('p');
+        const homeScore = document.createElement('h1');
         const awayScore = document.createElement('p');
 
         homeLogo.src = lastestScores[a].clubLogo;
-        awayLogo.src = lastestScores[a].awayLogo;
+        awayLogo.src = lastestScores[a].awayTeam.clubLogo;
         homeName.innerHTML = lastestScores[a].homeName;
-        awayName.innerHTML = lastestScores[a].awayName;
+        awayName.innerHTML = lastestScores[a].awayTeam.awayName;
         date.innerHTML = lastestScores[a].date;
         time.innerHTML = lastestScores[a].time;
         homeScore.innerHTML = lastestScores[a].homeScore;
-        awayScore.innerHTML = lastestScores[a].awayScore;
+        awayScore.innerHTML = lastestScores[a].awayTeam.awayScore;
 
-
+        container.appendChild(awayLogo);
+        container.appendChild(awayName);
+        container.appendChild(awayScore);
         box.appendChild(homeLogo);
         box.appendChild(homeName);
         box.appendChild(homeScore);
-        resultContainer.appendChild(box);
-        box.classList.add('home-area')
+      
 
+
+        boss.appendChild(box);
+        boss.appendChild(container);
+        
+        resultContainer.appendChild(boss);
+        boss.classList.add('boss')
+        container.classList.add('away-area')
+
+        box.classList.add('home-area')
+        homeScore.style.fontSize = '20px'
         // resultContainer.appendChild(date);
         // resultContainer.appendChild(time);
         // resultContainer.appendChild(awayLogo)
         
+        // console.log(lastestScores[a].clubLogo)
+        const matchIndex = 0;
 
+        const Logo = lastestScores[a].awayTeam.awayScore;
+        // const away = lastestScores[a].awayTeam.awayName;
+        
+        console.log(Logo);
 
     }
 }
